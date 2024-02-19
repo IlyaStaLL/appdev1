@@ -23,15 +23,17 @@ public class MainActivity extends AppCompatActivity{
 
     private void onClick(View v) {
         if(v.getId() == R.id.button2) {
-            EditText edittext = findViewById(R.id.editTextText);
+            /* EditText edittext = findViewById(R.id.editTextText);
             Intent intent = new Intent(MainActivity.this, MainActivity2.class);
             intent.putExtra(KEY,"Hi!");
             startActivity(intent);
+
             //======================
-            /*Intent intent = new Intent(Intent.ACTION_VIEW);
+             */
+            Intent intent = new Intent(Intent.ACTION_VIEW);
             String www = "https://mirea.ru";
             intent.setData(Uri.parse(www));
-            startActivity(intent);*/
+            startActivity(intent);
         } else {
 
         }
